@@ -1,7 +1,10 @@
 area_calculator
 bigger_area_calculator
+test
+c-echo
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
-c-echo
+*.o
+lib/
