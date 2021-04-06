@@ -23,8 +23,8 @@ TEST(EchoTest, Space) {
 }
 
 TEST(EchoTest, NewLineString) {
-    char* test_val[3]; test_val[0] = "./c-echo"; test_val[1] = "\n"; test_val[2] = "string";
-    EXPECT_EQ("\n string", echo(3,test_val));
+    char* test_val[2]; test_val[0] = "./c-echo"; test_val[1] = "\nstring";
+    EXPECT_EQ("\nstring", echo(2,test_val));
 }
 
 int main(int argc, char **argv) {
