@@ -13,13 +13,18 @@ TEST(EchoTest, EmptyString) {
 }
 
 TEST(EchoTest, NewLine) {
-    char* test_val[1]; test_val[0] = "./c-echo"; test_val[1] = "\n";
+    char* test_val[2]; test_val[0] = "./c-echo"; test_val[1] = "\n";
     EXPECT_EQ("\n", echo(2,test_val));
 }
 
 TEST(EchoTest, Space) {
-    char* test_val[1]; test_val[0] = "./c-echo"; test_val[1] = " ";
+    char* test_val[2]; test_val[0] = "./c-echo"; test_val[1] = " ";
     EXPECT_EQ(" ", echo(2,test_val));
+}
+
+TEST(EchoTest, NewLineString) {
+    char* test_val[3]; test_val[0] = "./c-echo"; test_val[1] = "\n"; test_val[2] = "string";
+    EXPECT_EQ("\n string", echo(3,test_val));
 }
 
 int main(int argc, char **argv) {
